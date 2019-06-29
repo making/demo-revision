@@ -1,0 +1,5 @@
+applications:
+- name: rev
+  buildpacks:
+  - php_buildpack
+  memory: 32m
