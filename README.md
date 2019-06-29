@@ -1,5 +1,32 @@
 # Cloud Foundry Revision demo
 
+https://docs.cloudfoundry.org/devguide/revisions.html
+
+Tested with the following versions:
+
+```
+$ cf curl /v2/info
+{
+   "name": "Pivotal Application Service",
+   "build": "2.6.0-build.214",
+   "support": "https://support.pivotal.io",
+   "version": 0,
+   "description": "https://docs.pivotal.io/pivotalcf/2-6/pcf-release-notes/runtime-rn.html",
+   "authorization_endpoint": "https://login.run.pcfone.io",
+   "token_endpoint": "https://uaa.run.pcfone.io",
+   "min_cli_version": "6.23.0",
+   "min_recommended_cli_version": "6.23.0",
+   "app_ssh_endpoint": "ssh.run.pcfone.io:2222",
+   "app_ssh_host_key_fingerprint": "62:b2:73:9c:c1:c7:4f:c9:79:0c:62:ec:a1:9a:f9:b0",
+   "app_ssh_oauth_client": "ssh-proxy",
+   "doppler_logging_endpoint": "wss://doppler.run.pcfone.io:443",
+   "api_version": "2.135.0",
+   "osbapi_version": "2.14",
+   "routing_endpoint": "https://api.run.pcfone.io/routing",
+   "user": "fe4bac5f-d5e6-488c-b05e-ad3d220066ad"
+}
+```
+
 ```
 cf push --no-start
 ```
